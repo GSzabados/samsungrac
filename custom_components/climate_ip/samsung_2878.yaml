@@ -113,3 +113,6 @@ device:
     used_power:
       type: number
       status_template: '{% for key, value in device_state.items() %}{% if key == "AC_ADD2_USEDPOWER" %}{{value}}{% endif %}{% endfor %}'
+    outdoor_temperature:
+      type: number
+      status_template: '{% for key, value in device_state.items() %}{% if key == "AC_OUTDOOR_TEMP" %}{{value}}{% endif %}{% endfor %}'
